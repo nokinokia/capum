@@ -1,317 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
-  <title>Abstract Landing Page</title>
-  <style>
-    body {
-      font-family: 'Jacquard 24', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(45deg, #ff6f61, #6a0572, #045de9);
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    section {
-      padding: 50px 20px;
-      position: relative;
-      text-align: center;
-    }
-
-    #home {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .logo img {
-      width: 150px;
-      animation: rotate-logo 10s infinite linear;
-    }
-
-    @keyframes rotate-logo {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .content h1 {
-      font-size: 2.5rem;
-      margin: 20px 0;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .center-photo {
-      width: 300px;
-      height: auto;
-      border-radius: 50%;
-      animation: bounce 5s infinite;
-    }
-
-    .social-media img {
-      width: 50px;
-      margin: 10px;
-      animation: wiggle 3s infinite;
-    }
-
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-30px);
-      }
-      60% {
-        transform: translateY(-15px);
-      }
-    }
-
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(-15deg); }
-      50% { transform: rotate(15deg); }
-    }
-
-    #about {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 100px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #about::before {
-      content: '';
-      position: absolute;
-      top: -50px;
-      left: -50px;
-      width: 200px;
-      height: 200px;
-      background-color: aqua;
-      border-radius: 50%;
-      animation: rotate-background 15s linear infinite;
-    }
-
-    @keyframes rotate-background {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .about-box {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 10px;
-      animation: fadeInUp 2s ease-in-out;
-      position: relative;
-      z-index: 1;
-    }
-
-    .about-box h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    #features {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 50px 20px;
-    }
-
-    .feature-box {
-      width: 45%;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      animation: fadeInUp 2s ease-in-out;
-      position: relative;
-      z-index: 1;
-    }
-
-    #features .content {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 50px;
-    }
-
-    .photo-row {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px 0;
-      animation: scroll-left 10s linear infinite;
-    }
-
-    .photo-row.reverse {
-      animation: scroll-right 10s linear infinite;
-    }
-
-    .photo-row img {
-      width: 300px;
-      margin: 0 10px;
-      border-radius: 15px;
-      transition: transform 0.3s;
-    }
-
-    .photo-row img:hover {
-      transform: scale(1.1);
-    }
-
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    @keyframes scroll-right {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(100%); }
-    }
-
-    #copy-button {
-      background: linear-gradient(120deg, #fcff9e, #c67700, #12c2e9, #c471ed, #f64f59);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1.5rem;
-      cursor: pointer;
-      border-radius: 9px;
-      margin-top: 20px;
-      font-family: 'Jacquard 24', sans-serif;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    #copy-button:hover {
-      background-color: #5d17ff;
-    }
-
-    #gallery {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 50px 20px;
-    }
-
-    .gallery-box {
-      position: relative;
-    }
-
-    .gallery-box::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      animation: fadeInUp 3s ease-in-out;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$CAPUM</title>
+    <link rel="icon" type="image/x-icon" href="img/1.jpeg">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header class="crazy-navbar">
+        <h1 class="logo">$CAPUM</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#memes">Memes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="content">
-      <div class="logo">
-      </div>
-      <h1>Welcome to Our Abstract World</h1>
-      <img class="center-photo" src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Center Photo">
-      <div class="social-media">
-        <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" alt="Twitter"></a>
-        <a href="#"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png" alt="Telegram"></a>
-        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png" alt="Fun"></a>
-      </div>
-      <center>
-        <p id="copy-text">CA XXXXXXXXXXXXXXXXXXXX</p>
-        <button id="copy-button">Salin Teks</button>  
-      </center>
-    </div>
-  </section>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="crazy-text">$CAPUM</h2>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="">
-    <div class="">
-      <div class="about-box">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 1" width="20%">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-      </div>
-    </div>
-  </section>
+    <section id="memes" class="meme-gallery">
+        <div class="meme-grid">
+            <!-- Meme Cards -->
+            <div class="meme crazy-border">
+                <div class="meme-images">
+                    <img src="img/1.jpeg"
+            </div>
+        </div>
+    </section>
 
-  <!-- Features Section -->
-  <section id="features">
-    <div class="content">
-      <div class="feature-box">
+    <section id="tokenomics" class="info-section">
         <h2>TOKENOMICS</h2>
-        <p>Token Name = $JUCE</p>   
-        <p>TICKER = $JUCE</p>
+        <p>Token Name = $CAPUM</p>
+        <p>TICKER = $CAPUM</p>
         <p>TOTAL SUPPLY = 1,000,000,000</p>
         <p>LIQUIDITY POOL BURNED = 100%</p>
-        <p>TAX = 0%</p>
-      </div>
-      <div class="feature-box">
+        <p>TAXES = 0%</p>
+    </section>
+
+    <section id="roadmap" class="info-section">
         <h2>ROADMAP</h2>
         <p>1. Define Goals and Objectives</p>
         <p>2. Identify Steps and Phases</p>
         <p>3. Schedule Tasks and Phases</p>
         <p>4. Allocate Resources</p>
         <p>5. Choose Roadmap Format</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <div class="content">
-      <div class="photo-row">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 1">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 2">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 3">
-      </div>
-      <div class="photo-row reverse">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 4">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 5">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 6">
-      </div>
-      <div class="photo-row">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 7">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 8">
-        <img src="https://i.pinimg.com/originals/70/ae/1b/70ae1b4b5985a7cb42449237ee6816da.jpg" alt="Gallery Image 9">
-      </div>
-    </div>
-  </section>
-<script>
-    // Salin teks ke clipboard
-document.getElementById('copy-button').addEventListener('click', function() {
-    var copyText = document.getElementById('copy-text').textContent;
-    var textarea = document.createElement('textarea');
-    textarea.value = copyText;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert('Teks telah disalin: ' + copyText);
-  });
-  
-  // Tambahkan animasi fade-in pada elemen dengan ID copy-text
-  window.addEventListener('scroll', function() {
-    var fadeTarget = document.getElementById('copy-text');
-    var distanceFromTop = fadeTarget.getBoundingClientRect().top;
-    if (distanceFromTop < window.innerHeight) {
-      fadeTarget.classList.add('fade-in');
-    }
-  });
-  
-</script>
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>$CAPUM is a native utility token designed to facilitate seamless interaction
+            within a platform built on the Solana blockchain.</p>
+    </section>
+
+    <section id="socials" class="social-section">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://x.com/capumdev"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png"
+                    width="70px"></a>
+            <a href="https://t.me/capumsolana"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png"
+                    width="70px"></a>
+            <a href="#"><img
+                    src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png"
+                    width="70px"></a>
+        </div>
+    </section>
+
+    <section id="copy-text-section" class="copy-section">
+        <p id="copy-text">CA XXXXXXXXXXXXXXXXXXXX</p>
+        <button id="copy-button">COPY TEXT</button>
+    </section>
+
+    <footer class="crazy-footer">
+        <p>&copy; Copyright 2024 $CAPUM. All rights reserved </p>
+    </footer>
+
+    <script>
+        // Salin teks ke clipboard
+        document.getElementById("copy-button").addEventListener("click", function () {
+            const textToCopy = document.getElementById("copy-text").innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("text has been successfully designed!");
+            }).catch(() => {
+                alert("failed to copy text.");
+            });
+        });
+    </script>
 </body>
 </html>
