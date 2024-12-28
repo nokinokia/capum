@@ -1,0 +1,210 @@
+/* styles.css */
+
+/* Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(45deg, #ff00ff, #000000, #000000);
+    animation: backgroundShift 5s infinite;
+    color: #fff;
+}
+
+/* Navbar */
+.crazy-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.crazy-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.crazy-navbar a {
+    color: #fffdff;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(-5deg);
+    transition: transform 0.3s;
+}
+
+.crazy-navbar a:hover {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    color: #000000;
+    text-shadow: 3px 3px #000;
+    animation: textBounce 1.5s infinite;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+/* Meme Gallery */
+.meme-gallery {
+    padding: 50px 20px;
+    background: #000000;
+    text-align: center;
+}
+
+.meme-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meme {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 6px dashed #ffffff; /* Lebih tebal border */
+    background: #ffffff;
+    color: #fff;
+    max-width: 1000px; /* Batasi lebar maksimum */
+}
+
+.meme-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Jarak antar gambar lebih besar */
+    margin-bottom: 20px;
+}
+
+.meme-images img {
+    width: 250px; /* Ukuran gambar lebih besar */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px; /* Lebih melengkung */
+    transition: transform 0.3s;
+}
+
+.meme-images img:hover {
+    transform: scale(1.3) rotate(5deg); /* Efek zoom lebih besar */
+}
+
+.crazy-caption {
+    font-size: 2em; /* Ukuran teks lebih besar */
+    font-weight: bold;
+    text-shadow: 4px 4px #ff0; /* Bayangan teks lebih besar */
+    margin-top: 20px;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background: #000;
+    text-align: center;
+}
+
+.crazy-title {
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ffffff;
+    animation: textGlitch 2s infinite;
+}
+
+/* Footer */
+.crazy-footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000;
+    font-size: 1.2em;
+    color: #ff00ff;
+    text-shadow: 1px 1px #ffff00;
+}
+
+/* Animations */
+@keyframes backgroundShift {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes textBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes textGlitch {
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #ffff00; }
+    50% { text-shadow: -2px -2px #00ffff, 2px 2px #ff00ff; }
+    100% { text-shadow: 2px 2px #ffff00, -2px -2px #00ffff; }
+}
+
+/* Tambahkan gaya khusus untuk elemen tambahan */
+
+.info-section {
+    padding: 40px 20px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+.info-section h2 {
+    font-size: 2.5em;
+    color: #000000;
+    text-shadow: 2px 2px #000000;
+}
+
+.social-section {
+    text-align: center;
+    padding: 20px;
+    background: #ff00ff;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.copy-section {
+    text-align: center;
+    padding: 20px;
+    background: #ff00ff;
+    color: #fff;
+}
+
+#copy-button {
+    padding: 10px 20px;
+    background: #000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#copy-button:hover {
+    background: #ff0;
+    color: #000;
+}
+
